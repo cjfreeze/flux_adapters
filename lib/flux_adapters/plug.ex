@@ -8,7 +8,7 @@ defmodule FluxAdapters.Plug do
       method: "#{conn.method}",
       owner: self(),
       path_info: split_path(conn.uri),
-      peer: conn.peer,
+      # peer: conn.peer,
       port: conn.port,
       remote_ip: conn.remote_ip,
       query_string: conn.query || "",
@@ -55,5 +55,13 @@ defmodule FluxAdapters.Plug do
 
   def read_req_body(_conn, _arg) do
 
+  end
+
+  def get_peer_data(%{peer: address}) do
+    %{
+      address: address,
+      port: nil,
+      ssl_cert: nil
+    }
   end
 end
