@@ -22,7 +22,7 @@ defmodule FluxAdapters.MixProject do
   defp deps do
     [
       {:plug, "~> 1.3.3 or ~> 1.4"},
-      {:flux, path: "../Flux"}
+      {:flux, github: "cjfreeze/Flux"},
     ]
   end
 end
