@@ -20,6 +20,6 @@ erl_crash.dump
 *.ez
 
 # Ignore package tarball (built via "mix hex.build").
-flux_adapters-*.tar
+flux_phoenix-*.tar
 
 .elixir_ls

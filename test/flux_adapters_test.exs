@@ -1,8 +1,8 @@
 defmodule FluxAdaptersTest do
   use ExUnit.Case
-  doctest FluxAdapters
+  doctest Flux
 
   test "greets the world" do
-    assert FluxAdapters.hello() == :world
+    assert Flux.hello() == :world
   end
 end

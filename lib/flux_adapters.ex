@@ -1,3 +1,3 @@
-defmodule FluxAdapters do
+defmodule Flux do
   @moduledoc false
 end
